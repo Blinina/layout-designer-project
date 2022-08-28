@@ -1,6 +1,7 @@
 * {
     box-sizing: border-box;
   }
+  
 @font-face {
     font-weight: 400;
     font-family: "Neucha";
@@ -24,7 +25,7 @@
     --blue: #1085c5;
 }
 .color-brown{
-    background-color: var(--light-white);
+    background-color: var(--brown);
 }
 .color-light{
     background-color: var(--light);
@@ -34,7 +35,14 @@ body{
     font-size: 16px;
     color: var(--dark);
     line-height: 1.2em;
-    overflow-x:hidden;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+
+}
+a {
+  outline: none;
+  text-decoration: none;
 }
 h1, 
 h2,
@@ -43,145 +51,183 @@ h3 {
     font-family: "Neucha";
     color: var(--main);
 }
-
-
 h1 {
     font-weight: 400;
     font-size: 72px;
     font-family: "Neucha", cursive;
+    margin: 0px;
+    padding: 0px;
   }
   h2{
     font-size: 62px;
-
   }
   h3{
     font-size: 34px;
-
   }
   p{
     margin: 0px;
     padding: 0px;
   }
-.background-image::before {
+.bg-img::before {
+    background-image: url(/images/background.png);
     background-repeat: no-repeat;
     background-size: cover;
-    background-image: url(/images/background.png);
     width: 100%;
     height: 100%;
     position: absolute;
-    opacity: 0.9;
-    top: 0;
+    content: "";
+    opacity: 0.1; 
     margin: 0;
-    padding: 0;
-    z-index: -1;
-  }
-.container {
-width: 1110px;
-margin: 0 auto;
-  }
-section {
-padding: 100px 0;
+   
 }
- 
-.header-image {
+
+.container {
     position: relative;
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    max-width: 1110px;
+    margin: 0 auto;
+    padding: 100px 0;
+}
+/* 1 слайд */
+header .container {
+    justify-content: space-between;
+    height: 100vh;
+    min-height: 900px;
+  }
+.header-title{
+z-index: 2;
+ }
+.header-image {
+    position: absolute;
     height: 525px;
     top: 55px;
     right: -270px;
     vertical-align: middle;
-  }
-.header-discriptions{
+    z-index: 1;
+}
+.header-discriptions {
     display: flex;
     flex-wrap: nowrap;
   justify-content: center;
 }
+
 .header-text-left{
     margin-right: 30px;
 }
+.header-paragraph{
+    margin-bottom: 40px;
+}
+
 .text-dark {
     color: #2a2626;
-  }
+}
+
 .btn {
-    background-color: #fe8a02;
+    background-color: var(--main);
     padding: 12px 24px;
-    color: #fff;
-    font-weight: bold;
+    color: var(--white);
     border: 0px;
+    margin-top: 40px;
+    font-weight: 700px;
+
 }
- /* второй стайд*/ 
+.btn:hover{
+    background-color: var(--brown);
+}
 
-/* .general{
+ /* второй слайд*/ 
+ .general {
+     text-align: center;
+     height: 814px;
 
+}
+.general >.container{
+    z-index: 1;
+    align-items: center;
+}
+/* .general-header{
+    text-align: center;
 } */
-.video{
-filter: drop-shadow(0 16px 32px rgba(0, 0, 0, 0.15));
-}
-.general-header {
-text-align: center;
-}
 .general-title{
-    margin: 0;
     margin-bottom: 30px;
+    margin-top: 0;
 }
+iframe{
+filter: drop-shadow(0 16px 32px rgba(0, 0, 0, 0.15));
+margin-top: 30px;
+}
+
+
+
  /* третий стайд*/ 
 .list-section{
     background-color: var(--main-dark);
-    padding-top: -100px;
+    padding-top: 100px;
 }
 .list {
  display: flex;
  flex-wrap: wrap; 
  justify-content: space-between;
- 
+ margin: 0;
 }
 .item-list {
+    display: flexbox;
     padding: 24px;
     width: 350px;
     list-style-type: none;
-    background-color: #f5f4f0;
-    margin-top: 40px;
+    background-color: var(--light);
+margin-top: 20px;  
+}
+.no-top{
+    margin-top: 0;
+}
+
+.item-list:not(:first-child):hover{
+    background-color: var(--main);
+    cursor: pointer;
 }
 .list-title{
     padding: 0;
     background-color: var(--main-dark);
 }
+.item-list:not(:first-child):hover .item-title{
+color: var(--white);
+}
 .list-title-main{
-    font-size: 52px ;
-
+    font-size: 52px;
+    font-weight: 400;
+    margin: 0;
 }
 .item-count{
 padding-bottom: 40px;
 font-size: 64px;
 font-family: "Neucha";
-line-height: 1em;
+line-height: 1;
 margin: 0px;
 height: 100px;
 color: var(--dark)
 }
 .item-title{
-    margin: 0;
-    padding: 0;
+    margin-bottom: 16px;
+
 }
 .text-white{
-    color: #fff;
+    color: var(--white);
 }
-
-
+.item-paragraph{
+    color: var(--main-dark);
+}
+.item-list:not(:first-child):hover .item-paragraph{
+    color: var(--white);
+}
 /* слайд 4 */
-.ikea-effect {
-    background-color: var(--light);
-    padding: 100px 0;
-}
+
 .card-header {
     display: flex;
-justify-content: space-between ;
+justify-content: space-between;
 }
-/* .ikea-image{
-    height: 578px;
-    width: 434px;
-    vertical-align: middle;
-    padding-right: 30px;
-} */
 .card-discriptions-container  {
     display: flex;
   justify-content: space-between;
@@ -207,19 +253,36 @@ font-weight: 400px;
 font-size: 34px; 
 line-height: 40.8px;
 }
-.card-discription-title {
+.card-discription-title-light {
     margin: 100px 0px 20px 0px;
+    background-color: var(--light);
+    color: var(--brown);
+}
+.card-discription-title-dark {
+    margin: 100px 0px 20px 0px;
+    background-color: var(--brown);
+    color: var(--white);
 }
 
+.images-right{
+margin-left: 30px;
+filter: drop-shadow(0 16px 32px rgba(0, 0, 0, 0.15));
 
+
+}
+.images-right{
+margin-right: 30px;
+filter: drop-shadow(0 16px 32px rgba(0, 0, 0, 0.15));
+   
+}
 
 /* ПОДВАЛ */
 .container-footer{
     background-color: var(--main-dark);
     display: flex;
- justify-content: space-around;
- width: 1110px;
- height: 190px;
+    align-items: center;
+    justify-content: space-between;
+    height: 190px;
 }
 .input{
     height: 50px;
@@ -239,10 +302,12 @@ width: 423px;
 .post-input{
     font-size: 12px;
 }
+.footer-title {
+    margin: 34px;
+}
 /* контактная информация */
 .container-contact{
     padding-top: 60px;
     font-size: 14px;
     text-align: center;
-    width: 1110px;
 }
