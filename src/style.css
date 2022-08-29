@@ -73,7 +73,8 @@ h1 {
     background-repeat: no-repeat;
     background-size: cover;
     width: 100%;
-    height: 100%;
+    height: 860px;
+
     position: absolute;
     content: "";
     opacity: 0.1; 
@@ -239,8 +240,10 @@ justify-content: space-between;
 }
 .card-ligth-text{
 color: var(--light-dark);
-margin: 0px;
-padding: 0px;
+
+}
+.card-dark-text{
+color: var(--light-white);
 }
 .card-title{
     margin: 0px;
@@ -264,7 +267,7 @@ line-height: 40.8px;
     color: var(--white);
 }
 
-.images-right{
+.images-left{
 margin-left: 30px;
 filter: drop-shadow(0 16px 32px rgba(0, 0, 0, 0.15));
 
@@ -284,26 +287,50 @@ filter: drop-shadow(0 16px 32px rgba(0, 0, 0, 0.15));
     justify-content: space-between;
     height: 190px;
 }
+.email{
+    margin: 55px;
+}
+.email-form {
+    display: flex;
+    width: 100%;
+  }
+.email > p{
+margin-bottom: 9px;
+}
 .input{
     height: 50px;
     padding: 15px;
     margin: 0px;
 }
-input[value="Ваша электронная почта"] {
+input[placeholder="Ваша электронная почта"] {
     color: var(--light-white);
     font-size: 13.1px;
-width: 423px;    
+    width: 423px;    
 }
-.input-button{
+.button{
     height: 50px;
     width: 70px;
-    background-color: #fe8a02;
+    background-color: var(--main);
+    border: 0;
+}
+.button::before{
+    background-image: url(/images/send.svg);
+    background-repeat: no-repeat;
+    content: "";
+    width: 23px;
+  height: 23px;
+  display: inline-block;
+  vertical-align: middle;
+  margin-right: 7px;
+    
+
 }
 .post-input{
     font-size: 12px;
 }
 .footer-title {
-    margin: 34px;
+font-weight: 400;
+margin: 55px;
 }
 /* контактная информация */
 .container-contact{
