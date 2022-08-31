@@ -339,9 +339,8 @@ input[placeholder="Ваша электронная почта"] {
     font-size: 12px;
     outline:none;
 }
-.post-input-href {
+.href-underline {
     text-decoration: underline;
-
 }
 .footer-title {
 font-weight: 400;
