@@ -5,13 +5,13 @@
 @font-face {
     font-weight: 400;
     font-family: "Neucha";
-    src: url("/fonts/Neucha-Regular.ttf");
+    src: url("/src/fonts/Neucha-Regular.ttf");
   }
   
 @font-face {
     font-weight: 400;
     font-family: "Open Sans";
-    src: url("/fonts/OpenSans-Regular.ttf");
+    src: url("/src/fonts/OpenSans-Regular.ttf");
   }
 :root {
     --white: #fff;
@@ -50,16 +50,15 @@ h3 {
     line-height: 1.2em;
     font-family: "Neucha";
     color: var(--main);
-}
-h1 {
-    font-weight: 400;
-    font-size: 72px;
-    font-family: "Neucha", cursive;
     margin: 0px;
     padding: 0px;
+    font-weight: normal;
+}
+h1 {
+    font-size: 72px;
   }
   h2{
-    font-size: 62px;
+    font-size: 60px;
   }
   h3{
     font-size: 34px;
@@ -69,7 +68,7 @@ h1 {
     padding: 0px;
   }
 .bg-img::before {
-    background-image: url(/images/background.png);
+    background-image: url(/src/images/background.png);
     background-repeat: no-repeat;
     background-size: cover;
     width: 100%;
@@ -130,7 +129,7 @@ z-index: 2;
     color: var(--white);
     border: 0px;
     margin-top: 40px;
-    font-weight: 700px;
+    font-weight: bold;
 
 }
 .btn:hover{
