@@ -99,7 +99,7 @@ header .container {
     min-height: 900px;
   }
 .header-title{
-z-index: 2;
+    z-index: 2;
  }
 .header-image {
     position: absolute;
@@ -111,7 +111,7 @@ z-index: 2;
 .header-discriptions {
     display: flex;
     flex-wrap: nowrap;
-  justify-content: center;
+    justify-content: center;
 }
 
 .header-text-left{
@@ -124,15 +124,13 @@ z-index: 2;
 .text-dark {
     color: #2a2626;
 }
-
 .btn {
-    background-color: var(--main);
-    padding: 12px 24px;
-    color: var(--white);
-    border: 0px;
     margin-top: 40px;
+    padding: 12px 24px;
+    background-color: var(--main);
+    border: 0px;
+    color: var(--white);
     font-weight: bold;
-
 }
 .btn:hover{
     background-color: var(--brown);
@@ -152,54 +150,50 @@ z-index: 2;
     text-align: center;
 }
 .general-discription{
-margin: 30px 0;
+    margin: 30px 0;
 }
 iframe{
-margin-bottom: -200px;
-position: relative;
-filter: drop-shadow(0 16px 32px rgba(0, 0, 0, 0.15));
+    position: relative;
+    margin-bottom: -200px;
+    filter: drop-shadow(0 16px 32px rgba(0, 0, 0, 0.15));
 }
 
  /* третий стайд*/ 
 .list-section{
-    background-color: var(--main-dark);
     padding-top: 100px;
+    background-color: var(--main-dark);
 }
 .list {
- display: flex;
- flex-wrap: wrap; 
- justify-content: space-between;
- margin: 0;
- padding-left: 0;
- list-style-type: none;
+    display: flex;
+    flex-wrap: wrap; 
+    justify-content: space-between;
+    margin: 0;
+    padding-left: 0;
+    list-style-type: none;
 }
 .item-list {
-    /* width: 350px;
-    margin-top: 20px;
-    padding: 24px; */
     display: flexbox;
-    padding: 24px;
     width: 350px;
-    list-style-type: none;
+    padding: 24px;
     margin-top: 20px;  
     background-color: var(--light);
-
+    list-style-type: none;
 }
-.no-top{
+.no-top {
     margin-top: 0;
 }
 
-.item-list:not(:first-child):hover{
+.item-list:not(:first-child):hover {
     background-color: var(--main);
     cursor: pointer;
 }
 .list-title{
     padding: 0;
-    background-color: var(--main-dark);
     margin-bottom: 16px;
+    background-color: var(--main-dark);
 }
 .item-list:not(:first-child):hover .item-title{
-color: var(--white);
+    color: var(--white);
 }
 .list-title-main{
     font-size: 52px;
@@ -208,13 +202,11 @@ color: var(--white);
     
 }
 .item-count{
-margin-bottom: 40px;
-font-size: 64px;
-font-family: "Neucha";
-/* font-style: italic; */
-line-height: 1;
-/* height: 100px;  */
-color: var(--dark)
+    margin-bottom: 40px;
+    font-size: 64px;
+    font-family: "Neucha";
+    line-height: 1;
+    color: var(--dark)
 }
 .item-title{
     margin-bottom: 16px;
@@ -230,15 +222,16 @@ color: var(--dark)
 .item-list:not(:first-child):hover .item-paragraph{
     color: var(--white);
 }
+
 /* слайд 4 */
 
 .card-header {
     display: flex;
-justify-content: space-between;
+    justify-content: space-between;
 }
 .card-discriptions-container  {
     display: flex;
-  justify-content: space-between;
+    justify-content: space-between;
 }
 .card-text-left {
     margin-top: 0px;
@@ -246,25 +239,20 @@ justify-content: space-between;
     
 }
 .card-ligth-text{
-color: var(--light-dark);
+    color: var(--light-dark);
 
 }
 .card-dark-text{
-color: var(--light-white);
+    color: var(--light-white);
 }
 .card-dis-text{
     flex-basis: 50%;
 }
-.card-title{
-    margin: 0px;
-padding: 0px;
-
-}
 .card-discription{
-font-family: "Neucha";
-font-weight: 400px;
-font-size: 34px; 
-line-height: 40.8px;
+    font-family: "Neucha";
+    font-weight: normal;
+    font-size: 34px; 
+    line-height: 40.8px;
 }
 .card-discription-title-light {
     margin: 100px 0px 20px 0px;
@@ -278,24 +266,23 @@ line-height: 40.8px;
 }
 
 .images-left{
-margin-left: 30px;
-filter: drop-shadow(0 16px 32px rgba(0, 0, 0, 0.15));
-
-
+    margin-left: 30px;
+    filter: drop-shadow(0 16px 32px rgba(0, 0, 0, 0.15));
 }
 .images-right{
-margin-right: 30px;
-filter: drop-shadow(0 16px 32px rgba(0, 0, 0, 0.15));
+    margin-right: 30px;
+    filter: drop-shadow(0 16px 32px rgba(0, 0, 0, 0.15));
    
 }
 
 /* ПОДВАЛ */
 .container-footer{
-    background-color: var(--main-dark);
     display: flex;
-    align-items: center;
     justify-content: space-between;
     height: 190px;
+    align-items: center;
+    background-color: var(--main-dark);
+
 }
 .email{
     margin: 55px;
@@ -305,7 +292,7 @@ filter: drop-shadow(0 16px 32px rgba(0, 0, 0, 0.15));
     width: 100%;
   }
 .email > p{
-margin-bottom: 9px;
+    margin-bottom: 9px;
 }
 .input{
     height: 50px;
@@ -320,36 +307,37 @@ input[placeholder="Ваша электронная почта"] {
 .button{
     height: 50px;
     width: 70px;
-    background-color: var(--main);
     border: 0;
+    background-color: var(--main);
+    cursor: pointer;
+
 }
-.button::before{
+.button::before {
+    display: inline-block;
+    vertical-align: middle;
+    width: 23px;
+    height: 23px;
     background-image: url(/images/send.svg);
     background-repeat: no-repeat;
     content: "";
-    width: 23px;
-  height: 23px;
-  display: inline-block;
-  vertical-align: middle;
-  margin-right: 7px;
-    
-
+    margin-right: 7px;
 }
-.post-input{
+.post-input {
     font-size: 12px;
-    outline:none;
+    outline: none;
 }
 .href-underline {
     text-decoration: underline;
 }
 .footer-title {
-font-weight: 400;
-margin: 55px;
+    margin: 55px;
+    font-weight: 400;
 }
+
 /* контактная информация */
+
 .container-contact{
     padding-top: 60px;
-    /* font-size: 14px; */
     text-align: center;
 }
 .contact-text {
