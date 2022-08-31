@@ -66,6 +66,8 @@ h1 {
   p{
     margin: 0px;
     padding: 0px;
+    font-size: 16px;
+    line-height: 1.6em;
   }
 .bg-img::before {
     background-image: url(/images/background.png);
@@ -146,9 +148,9 @@ z-index: 2;
     z-index: 1;
     align-items: center;
 }
-/* .general-header{
+.general-header{
     text-align: center;
-} */
+}
 .general-discription{
 margin: 30px 0;
 }
@@ -335,6 +337,11 @@ input[placeholder="Ваша электронная почта"] {
 }
 .post-input{
     font-size: 12px;
+    outline:none;
+}
+.post-input-href {
+    text-decoration: underline;
+
 }
 .footer-title {
 font-weight: 400;
