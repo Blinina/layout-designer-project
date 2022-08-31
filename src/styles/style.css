@@ -350,6 +350,9 @@ margin: 55px;
 /* контактная информация */
 .container-contact{
     padding-top: 60px;
-    font-size: 14px;
+    /* font-size: 14px; */
     text-align: center;
+}
+.contact-text {
+    font-size: 14px;
 }
