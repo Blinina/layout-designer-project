@@ -243,6 +243,9 @@ color: var(--light-dark);
 .card-dark-text{
 color: var(--light-white);
 }
+.card-dis-text{
+    flex-basis: 50%;
+}
 .card-title{
     margin: 0px;
 padding: 0px;
