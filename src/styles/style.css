@@ -355,4 +355,8 @@ margin: 55px;
 }
 .contact-text {
     font-size: 14px;
+    margin-bottom: 16px;
+}
+.no-bottom{
+    margin-bottom: 0;
 }
