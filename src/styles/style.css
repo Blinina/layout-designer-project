@@ -5,13 +5,13 @@
 @font-face {
     font-weight: 400;
     font-family: "Neucha";
-    src: url("/src/fonts/Neucha-Regular.ttf");
+    src: url("/fonts/Neucha-Regular.ttf");
   }
   
 @font-face {
     font-weight: 400;
     font-family: "Open Sans";
-    src: url("/src/fonts/OpenSans-Regular.ttf");
+    src: url("/fonts/OpenSans-Regular.ttf");
   }
 :root {
     --white: #fff;
@@ -68,7 +68,7 @@ h1 {
     padding: 0px;
   }
 .bg-img::before {
-    background-image: url(/src/images/background.png);
+    background-image: url(/images/background.png);
     background-repeat: no-repeat;
     background-size: cover;
     width: 100%;
@@ -312,7 +312,7 @@ input[placeholder="Ваша электронная почта"] {
     border: 0;
 }
 .button::before{
-    background-image: url(images/send.svg);
+    background-image: url(/images/send.svg);
     background-repeat: no-repeat;
     content: "";
     width: 23px;
