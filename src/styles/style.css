@@ -139,7 +139,7 @@ z-index: 2;
  /* второй слайд*/ 
  .general {
      text-align: center;
-     height: 814px;
+     /* height: 814px; */
 
 }
 .general >.container{
@@ -149,13 +149,13 @@ z-index: 2;
 /* .general-header{
     text-align: center;
 } */
-.general-title{
-    margin-bottom: 30px;
-    margin-top: 0;
+.general-discription{
+margin: 30px 0;
 }
 iframe{
+margin-bottom: -200px;
+
 filter: drop-shadow(0 16px 32px rgba(0, 0, 0, 0.15));
-margin-top: 30px;
 }
 
 
