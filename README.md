@@ -4,4 +4,4 @@
 This landing page is a training project for developing skills in working with CSS, HTML.
 The work used OOCSS and Atomic CSS approaches.
 
-###[Surge.sh](https://exciting-tree.surge.sh/)
+[Surge.sh](https://exciting-tree.surge.sh/)
