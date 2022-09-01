@@ -57,7 +57,7 @@ h3 {
   padding: 0;
 
   color: var(--main);
-  font-weight: normal;
+  font-family: Neucha, cursive;
   line-height: 1.2em;
 }
 
@@ -302,7 +302,7 @@ iframe {
 .card-discription {
   font-weight: normal;
   font-size: 34px;
-  font-style: neacha, normal;
+  font-family: Neucha, cursive;
   line-height: 40.8px;
 }
 
